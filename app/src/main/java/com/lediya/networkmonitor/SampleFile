@@ -1,0 +1,12 @@
+val wifiManager: WifiManager =
+                            context.getSystemService(Context.WIFI_SERVICE) as WifiManager
+                        val wifiInfo: WifiInfo = wifiManager.connectionInfo
+                        if (NetworkStateHolder.isWifi && wifiInfo.rssi <= -70) {
+                           //Weak Signal
+                        } else {
+                           //timeout
+                        }
+// Network Check
+   if (NetworkStateHolder.isConnected) {
+
+   }
